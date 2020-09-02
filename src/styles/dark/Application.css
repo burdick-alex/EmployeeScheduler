@@ -1,0 +1,67 @@
+body {
+    background-color: #303030;
+  }
+#employeesTitle
+{
+  color: white;
+}
+#shiftsTitle1
+{
+  color: white;
+}
+#shiftsTitle2
+{
+  color: white;
+}
+#settingsTitle
+{
+  color: white;
+  display:'float';
+  padding-left:'1%';
+}
+/* header
+{
+  background-color: #303030;
+}
+footer
+{
+  background-color: #303030;
+}
+#shiftsTitle1
+{
+  color: white;
+}
+#shiftsTitle2
+{
+  color: white;
+}
+#employeesTitle
+{
+  color: white;
+}
+#settingsTitle
+{
+  color: white;
+  display:'float';
+  padding-left:'1%';
+}
+
+#headerDiv
+{
+  background-color: #303030;
+}*/
+#popup
+{
+  background-color: #303030;
+  color: white;
+}
+
+h1
+{
+  color: white;
+}
+
+label
+{
+  color: white;
+}
