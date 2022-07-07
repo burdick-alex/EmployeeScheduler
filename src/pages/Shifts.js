@@ -7,6 +7,10 @@ import axios from 'axios';
 
 //styles
 var filetheme = localStorage.getItem('theme');
+if(filetheme == null)
+{
+  filetheme = 'dark';
+}
 require ('../styles/' + filetheme + '/Calendar.css');
 
 

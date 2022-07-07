@@ -10,6 +10,10 @@ import Stringify from 'react-stringify';
 //styles
 
 var filetheme = localStorage.getItem('theme');
+if(filetheme == null)
+{
+  filetheme = 'dark';
+}
 require ('../styles/' + filetheme + '/ReactTable.css');
 require ('../styles/' + filetheme + '/Application.css');
 require ('../styles/' + filetheme + '/react-tabs.css');

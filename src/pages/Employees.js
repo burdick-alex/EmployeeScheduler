@@ -6,6 +6,10 @@ import Popup from "reactjs-popup";
 
 //styles
 var filetheme = localStorage.getItem('theme');
+if(filetheme == null)
+{
+  filetheme = 'dark';
+}
 require ('../styles/' + filetheme + '/react-tabs.css');
 require ('../styles/' + filetheme + '/ReactTable.css');
 require ('../styles/' + filetheme + '/Application.css');

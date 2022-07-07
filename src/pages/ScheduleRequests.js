@@ -11,6 +11,10 @@ import Stringify from 'react-stringify';
 //styles
 
 var filetheme = localStorage.getItem('theme');
+if(filetheme == null)
+{
+  filetheme = 'dark';
+}
 require ('../styles/' + filetheme + '/ReactTable.css');
 require ('../styles/' + filetheme + '/Application.css');
 require ('../styles/' + filetheme + '/react-tabs.css');
@@ -443,14 +447,14 @@ class Selector extends React.Component
     {
         return (
         <div>
-            <span>
+            <span id="empTagRequests">
                 Employee:   
                 <select name="employ" onChange={e => {console.log(e.target.value),localStorage.setItem('emp',e.target.value);window.location.reload(true);/*localStorage.setItem('theme',e.target.value);console.log("setting to",e.target.value);window.location.reload(true);}*/}}>
                     {this.state.employees.map((item,i) => {return(<option selected={localStorage.getItem('emp') == item.id} key={item.id} value={item.id}>{item.id}</option>)})}
                 </select>
             </span>
             <div>
-        <h2>{this.getEmpName(localStorage.getItem('emp'))}</h2>
+        <h2 id="empNameRequests">{this.getEmpName(localStorage.getItem('emp'))}</h2>
             </div>
         </div>
         );

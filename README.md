@@ -1,14 +1,70 @@
-The Problem:
-In my student organizations at TAMU, we often need to have people go on campus and advertise for our events. Because we are volunteer organizations, it is sometimes hard to get people to sign up for shifts. Currently, the tool that evryone uses to schedule people is a massive spreadsheet. The Problem is that assigning people manually can be a lot of work, and there is another problem that people don't get the shifts that they want. Also, when doing it manually, you have to consider whether or not people can work shifts that you schedule them for, due to classes and other obligations. My scheduler aims to solve all of these problems.
+# Getting Started with Create React App
 
-The Build:
-In this project, there are four main parts: the frontend, the backend, the database, and the constraint solver. For the frontend, I chose React after looking at several frontend options like, Angular, Jade, and the standard HTML/CSS/JS option. After doing some research, I decided on react because of its growing popularity, its scalability, and its simplicity. Before this project, I didn't know React, but now I have a good grasp of it. For the backend, I chose the Python Flask framework because I already had a lot of experience with it, as I used it for developing microservices during my internship at Ericsson. As far as the database, I used sqlite3, due to its lightweight and also because it was free. If I were to take the application commercial, I would opt for a paid and more secure database alternative. Lastly, I had to select a constraint solver. I initially was going to use the Optaplanner constraint solver, however when I thought about the problem I was trying to solve, I realized that my solution didn't require all of the features of Optaplanner. I ended up looking around and found Google's OR Tools constraint solver, which was simpler to set up and didn't have too many feature that I didn't need. Also, I was able to use a python version of OR Tools, so I could integrate pretty easily with Flask.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-How it works:
-The first screen is the employee tab. Here you can add all of your employees/volunteers into the system, where they are saved in the DB.
-The next screen is the shift tab. Here you can add all of your shifts into the system, where they are saved in the DB. In this screen, the shifts are shown in a calendar view.
-The next screen is the schedule requests tab. Here you can add all of your employees'/volunteers' requests into the system(whether they want to work a shift or they can't work shift), where they are saved in the DB. Lastly, there is a schedule tab. This is the place where everything comes together. It has a table with all of the shifts and when the schedule button is pressed, it fills them with employees(in the assigned employee(s) column.
+## Available Scripts
 
+In the project directory, you can run:
 
-Future Plans:
-As of right now, all of the functionality I intended to add is working, however I do still plan to add small updates in the future. Also, I am looking into places to host it and it should be available soon.
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
